@@ -23,13 +23,15 @@ burptoaff xss.xml affectedxss.txt
 ```
 ```
 cat affectedxss.txt
-[GET] https://redacted/endpoint/xxx/?endpoint=value'%3e%3cscript%3ealert(1)%3c%2fscript%3exuy5j (param=value&param=value)
+[GET] https://redacted/endpoint/xxx/?endpoint=value'%3e%3cscript%3ealert(1)%3c%2fscript%3exuy5j 
 [POST] https://redacted/endpoint/xxx/ (param=value&vulnparam='%3e%3cscript%3ealert(1)%3c%2fscript%3exuy5j )
 ```
 
-## Step Reproduce
+## Use Case
 1. [Create Report in xml](https://portswigger.net/burp/documentation/desktop/running-scans/reporting/report-settings) 
-2. run this tools
+Imagine you have hundreds of vulnerable GET/POST endpoints with different insertpoints, and they were included in the pentest report as neat impacts but had to be copied one by one, leave that! Just export the XML.
+![How to export](export.png)
+2. Then run this tools
 
 
 ## Contribution
