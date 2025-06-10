@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='burptaff',
+    name='burptoaff',
     version='0.1',
     packages=find_packages(), 
     entry_points={
         'console_scripts': [
-            'burptaff = burptaff.__main__:main'
+            'burptoaff = burptoaff.__main__:main'
         ]
     },
     author='Your Name',
