@@ -28,9 +28,10 @@ cat affectedxss.txt
 ```
 
 ## Use Case
-1. [Create Report in xml](https://portswigger.net/burp/documentation/desktop/running-scans/reporting/report-settings) 
+
 Imagine you have hundreds of vulnerable GET/POST endpoints with different insertpoints, and they were included in the pentest report as neat impacts but had to be copied one by one, leave that! Just export the XML.
 ![How to export](export.png)
+1. [Create Report in xml](https://portswigger.net/burp/documentation/desktop/running-scans/reporting/report-settings) 
 2. Then run this tools
 
 
